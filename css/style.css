@@ -1,0 +1,475 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+:before,
+:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+html {
+    font-size: 10px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+        margin: 0;
+overflow-x: hidden;
+    background-color: #fff;
+
+}
+ h1{
+        text-align: center;
+        font-size: 31px;
+        color: #d9dadb; /* previously was #4c4c4c*/
+        margin-bottom: 5rem;
+
+
+}
+    p{
+        padding: 5px;
+        padding-right: 2px;
+        width: 250px;
+        font-size: 24px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+        text-align: center;
+        color:#d9dadb;
+        text-transform: uppercase;
+        border-radius: 3rem;
+        overflow: hidden;
+
+  }
+    p:active{
+       transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  box-shadow: 0px 1px 0px 0px;
+
+
+  }
+
+
+#myClasses{
+    display: block;
+        margin: 0 150px auto auto;
+}
+
+input{
+    height: 40px;
+    line-height: 40px;
+     background-color: white;
+    border-width: 0;
+    text-align: center;
+    border-radius: 2rem;
+    display: inline-block;
+    margin: 0 auto;
+    margin-right: 4rem;
+     margin-bottom: 5px;
+    text-transform: capitalize;
+    outline: none;
+    color: #313131;
+    -webkit-transition: -webkit-box-shadow 0.6s;
+    transition: box-shadow 0.6s;
+}
+input:hover{
+           -webkit-box-shadow: 0 0 8px 2px lightgrey;
+          box-shadow: 0 0 8px 2px lightgrey;
+}
+ .submit{
+    background-color: #CFCFCF;
+    color: #fff;
+        width: 150px;
+    margin: 0 120px auto auto;    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+button{
+    display: block;
+    width: 250px;
+    margin: 0 auto;
+    font-size:14px;
+    
+
+}
+     .welcome{
+    padding: 5rem;
+    margin-bottom: 0;
+  }
+    .on h1{
+        color:#ba001f;
+    }
+    .on p {
+
+        color:#fff;
+        background-color: #ba001f;
+  box-shadow: 0px 5px 0px 0px #930020;
+
+    }
+
+    ::selection{
+        background:#ba001f;
+        color: #fff;
+
+    }
+    .packer_logo {
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  top: 15px;
+  left:  15px;
+  background: url("https://i.vimeocdn.com/portrait/7784808_300x300") 0 0 no-repeat #242b33;
+  background-size: 80px;
+  outline: none;
+}
+.settings-window {
+    position:fixed;
+     top:0;
+    right:0;
+    width: 100%;
+    bottom:0;
+    left:0;
+    z-index:999;
+    opacity:0;
+     overflow-y: auto;
+    background-color: rgba(255,255,255,0.5);
+    pointer-events:none;
+    -webkit-transition:all 0.3s;
+    -moz-transition:all 0.3s;
+    transition:all 0.3s;
+    height: 100vh;
+            align-items: center;
+
+}
+.settings-window:target {
+    opacity:1;
+    pointer-events:auto;
+}
+.settings-window>div {
+    position: relative;
+    padding-top: 42px; 
+    background-color: white;
+    border-radius: 10px;
+    display: table;
+    margin: 0 auto;
+    width: 700px;
+    margin-top: 22rem;
+        box-shadow: 1px 0px 25px #cddbe1;
+
+
+}
+.grid-cell {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  vertical-align: top;
+  width: 100%;
+  font-size: 1rem;
+}
+.grid2{
+    width: 50%;
+}
+.settings-window header {
+    font-weight:bold;
+}
+.settings-close {
+    color:#aaa;
+    line-height:50px;
+    font-size:80%;
+    position:absolute;
+    right:0;
+    text-align:center;
+    top:0;
+    width:70px;
+    text-decoration:none;
+}
+.settings-close:hover {
+    color:#000;
+}
+.settings-window h1 {
+  font-size: 150%;
+  margin: 0 0 15px;
+}
+
+
+/* Grid was taken from bootstrap framework*/
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+@media (min-width:768px) {
+    .container {
+        width: 750px
+    }
+}
+
+@media (min-width:992px) {
+    .container {
+        width: 970px
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+        width: 1170px
+    }
+}
+
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px
+}
+
+
+.col-md-4 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px
+}
+
+
+@media (min-width:992px) {
+    
+    .col-md-4
+   {
+        float: left
+    }
+  
+    .col-md-4 {
+        width: 33.33333333%
+    }
+   
+}
+
+@media (min-width:1200px) {
+   
+    .col-lg-4
+     {
+        float: left
+    }
+ }
+.bomb-menu {
+  font-size: 0.8em;
+  /* change font-size here to scale menu accordingly */
+  
+  position: fixed;
+  /* menu position */
+  
+   bottom:  2.2em;
+  width: 5.2em;
+  /* menu toggle button size */
+  
+  height: 5.2em;
+}
+
+.right-menu {
+  right: 2.2em;
+}
+
+.left-menu {
+  left: 2.2em;
+}
+
+.bomb-menu .menu-toggle-btn,
+.bomb-menu .menuIcon,
+.bomb-menu .menu-item {
+  position: absolute;
+  top: 0;
+}
+
+.right-menu .menu-toggle-btn,
+.right-menu .menuIcon,
+.right-menu .menu-item {
+  right: 0;
+}
+
+.left-menu .menu-toggle-btn,
+.left-menu .menuIcon,
+.left-menu .menu-item {
+  left: 0;
+}
+
+.bomb-menu .menu-toggle-btn,
+.bomb-menu .menuIcon {
+  width: 100%;
+  height: 100%;
+}
+
+.bomb-menu .menu-item {
+  width: 5.0em;
+  /* inner elements size */
+  
+  height: 5.0em;
+}
+
+.bomb-menu .menu-item i {
+  font-size: 2em;
+}
+/* Bomb-Menu Style */
+
+
+
+.bomb-menu {
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  z-index: 100;
+}
+
+.menu-toggle-btn {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 0;
+  padding: 0;
+  cursor: inherit;
+  background-color: transparent;
+  z-index: 101;
+}
+
+.menu-toggle-btn:focus {
+  outline: none;
+}
+
+.menu-icon  {
+  pointer-events: none;
+  width: 100%;
+
+}
+
+.bomb-menu ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  visibility: hidden;
+}
+
+.active + ul {
+  visibility: visible;
+ }
+
+.bomb-menu .menu-item {
+  background-color: transparent;
+  display: table;
+}
+
+.bomb-menu a {
+  display: table-cell;
+  vertical-align: middle;  /* vertical centering */
+  color: inherit;
+}
+/*********************** ANIMATIONS ***********************/
+/* Menu Icon Animation - Works for both right-aligned and left-aligned menu */
+
+ 
+.line {
+  transform: translateY(0px) rotate(0deg);
+  transition: transform 150ms linear;
+  transform-origin: 50% 50%;
+  stroke: #fff;
+}
+/* transform-origin fix for Firefox v42 */
+.line1 {
+  -moz-transform-origin: 26px 18px;
+}
+.line2 {
+  -moz-transform-origin: 26px 26px;
+}
+.line3 {
+  -moz-transform-origin: 26px 34px;
+}
+
+.active .line1 {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.active .line2 {
+  transform: rotate(-45deg);
+}
+
+.active .line3 {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Menu Items Animation - right-aligned menu */
+.right-menu .active + ul > .mi-1 {
+  animation: rExplode1 80ms ease-out 5ms forwards;
+}
+
+.right-menu .active + ul > .mi-2 {
+  animation: rExplode2 80ms ease-out 5ms forwards;
+}
+
+.right-menu .active + ul > .mi-3 {
+  animation: rExplode3 80ms ease-out 5ms forwards;
+}
+
+/* Menu Items Animation - left-aligned menu */
+.left-menu .active + ul > .mi-1 {
+  animation: lExplode1 80ms ease-out 530ms forwards;
+}
+
+.left-menu .active + ul > .mi-2 {
+  animation: lExplode2 80ms ease-out 530ms forwards;
+}
+
+.left-menu .active + ul > .mi-3 {
+  animation: lExplode3 80ms ease-out 530ms forwards;
+}
+
+ 
+/* right-aligned menu only */
+@keyframes rExplode1 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  70% {
+    transform: translateY(-120%);
+  }
+  100% {
+    transform: translateY(-140%);
+  }
+}
+
+@keyframes rExplode2 {
+ 0% {
+    transform: translate(0px, 0px);
+  }
+  70% {
+    transform: translateY(-190%);
+  }
+  100% {
+    transform: translateY(-250%);
+  }
+}
+
+@keyframes rExplode3 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  70% {
+    transform: translateY(-190%);
+  }
+  100% {
+    transform: translateY(-360%);
+  }
+}
+ 

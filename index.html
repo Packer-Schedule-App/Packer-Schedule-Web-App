@@ -7,103 +7,307 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="packer_logo">
- 
-</div>
+
+<nav class="bomb-menu right-menu">
+   <button class="menu-toggle-btn">
+    <img class="menu-icon" src="img/settings.png">
+
+  </button>
+   <ul>
+    <li class="menu-item mi-1">
+      <a href="#open-settings" title="Modify Schedule">
+    <img class="menu-icon" src="img/modify_day.png">
+      </a>
+    </li>
+    <li class="menu-item mi-2">
+      <a href="#" title="Assignments">
+    <img class="menu-icon" src="img/assignments.png">
+      </a>
+    </li>
+    <li class="menu-item mi-3">
+      <a href="#" title="Log Out">
+    <img class="menu-icon" src="img/log_out.png">
+      </a>
+    </li>
+  </ul>
+</nav>
+	<div>
+    <!--Packer Logo-->
+    <div class="packer_logo"></div>
+
+    <!-- Settings -->
+    <div id="open-settings" class="settings-window">
+        <div>
+            <a href="#settings-close" title="Close" class="settings-close">Close</a>
+            <h1>Modify Schedule</h1>
+                 <form id="myClasses" class="grid-cell grid2"  onSubmit="home()">
+                    <input type="text" id="aBand" name="A Band" placeholder="A Band" maxlength="10">
+                    <input type="text" id="bBand" name="B Band" placeholder="B Band">
+                    <input type="text" id="cBand" name="C Band" placeholder="C Band">
+                    <input type="text" id="dBand" name="D Band" placeholder="D Band">
+                    <input type="text" id="eBand" name="E Band" placeholder="E Band">
+                    <input type="text" id="fBand" name="F Band" placeholder="F Band">
+                    <input type="text" id="gBand" name="G Band" placeholder="G Band">
+                    <input type="text" id="lun"   name="Lunch" placeholder="Lunch">
+                    <input type="text" id="bre"   name="Break" placeholder="Break">
+                    <input type="text" id="adv"   name="Advisory" placeholder="Advisory">
+
+          			  <input class="submit" type="submit" value="Update →">
+                 </form>
+         </div>
+    </div>
+	
     <div class="container">
 
     <h1 class="welcome">Hey <span>Rob</span>, below is your schedule!</h1>
         <div class="row">
             <!--Day 1-->
-            <div class="day1  col-md-4 ">
+            <div class="on  col-md-4 ">
             <h1>Day 1</h1>
-            <p class="aband">A Band</p>
-            <p class="bband">B Band</p>
-            <p class="adv">Advisory</p>
+            <p class="aClass" >A Band</p>
+            <p class="bClass">B Band</p>
+            <p class="advi">Advisory</p>
             <p class="break">Break</p>
-            <p class="cband">C Band</p>
-            <p class="dband">D Band</p>
+            <p class="cClass">C Band</p>
+            <p class="dClass">D Band</p>
             <p class="lunch">Lunch</p>
-            <p class="eband">E Band</p>
+            <p class="eClass">E Band</p>
             </div>
             <!--Day 2-->
-            <div class="day2 col-md-4 ">
+            <div class=" col-md-4 ">
             <h1>Day 2</h1>
-            <p class="aband">F Band</p>
-            <p class="bband">G Band</p>
-            <p class="adv">Advisory</p>
+            <p class="fClass">F Band</p>
+            <p iclassd="gClass">G Band</p>
+            <p class="advi">Advisory</p>
             <p class="break">Break</p>
-            <p class="cband">A Band</p>
-            <p class="dband">B Band</p>
+            <p class="aClass">A Band</p>
+            <p class="bClass">B Band</p>
             <p class="lunch">Lunch</p>
-            <p class="eband">C Band</p>
+            <p class="cClass">C Band</p>
             </div>
             <!--Day 3-->
-            <div class="day3  col-md-4 ">
+            <div class="  col-md-4 ">
             <h1>Day 3</h1>
-            <p class="aband">D Band</p>
-            <p class="bband">E Band</p>
-            <p class="adv">Advisory</p>
+            <p class="dClass">D Band</p>
+            <p class="eClass">E Band</p>
+            <p class="advi">Advisory</p>
             <p class="break">Break</p>
-            <p class="cband">F Band</p>
-            <p class="dband">G Band</p>
+            <p class="fClass">F Band</p>
+            <p class="gClass">G Band</p>
             <p class="lunch">Lunch</p>
-            <p class="eband">A Band</p>
+            <p class="aClass">A Band</p>
             </div>
             <!--Day 4-->
-            <div class="day4  col-md-4 ">
+            <div class="  col-md-4 ">
             <h1>Day 4</h1>
-            <p class="aband">B Band</p>
-            <p class="bband">C Band</p>
-            <p class="adv">Advisory</p>
+            <p class="bClass">B Band</p>
+            <p class="cClass">C Band</p>
+            <p class="advi">Advisory</p>
             <p class="break">Break</p>
-            <p class="cband">D Band</p>
-            <p class="dband">E Band</p>
+            <p class="dClass">D Band</p>
+            <p class="eClass">E Band</p>
             <p class="lunch">Lunch</p>
-            <p class="eband">F Band</p>
+            <p class="fClass">F Band</p>
             </div>
             <!--Day 5-->
-            <div class="day5 col-md-4 ">
+            <div class=" col-md-4 ">
             <h1>Day 5</h1>
-            <p class="aband">G Band</p>
-            <p class="bband">A Band</p>
-            <p class="adv">Advisory</p>
+            <p class="gClass">G Band</p>
+            <p class="aClass">A Band</p>
+            <p class="advi">Advisory</p>
             <p class="break">Break</p>
-            <p class="cband">B Band</p>
-            <p class="dband">C Band</p>
+            <p class="bClass">B Band</p>
+            <p class="cClass">C Band</p>
             <p class="lunch">Lunch</p>
-            <p class="eband">D Band</p>
+            <p class="dClass">D Band</p>
             </div>
             <!--Day 6-->
-            <div class="day6  col-md-4">
+            <div class="  col-md-4">
             <h1>Day 6</h1>
-            <p class="aband">E Band</p>
-            <p class="bband">F Band</p>
-            <p class="adv">Advisory</p>
+            <p class="eClass">E Band</p>
+            <p class="fClass">F Band</p>
+            <p class="advi">Advisory</p>
             <p class="break">Break</p>
-            <p class="cband">G Band</p>
-            <p class="dband">A Band</p>
+            <p class="gClass">G Band</p>
+            <p class="aClass">A Band</p>
             <p class="lunch">Lunch</p>
-            <p class="eband">B Band</p>
+            <p class="bClass">B Band</p>
             </div>
             <!--Day 7-->
-            <div class="day7  col-md-4 ">
+            <div class="   col-md-4 ">
             <h1>Day 7</h1>
-            <p class="aband">C Band</p>
-            <p class="bband">D Band</p>
-            <p class="adv">Advisory</p>
+            <p class="cClass">C Band</p>
+            <p class="dClass">D Band</p>
+            <p class="advi">Advisory</p>
             <p class="break">Break</p>
-            <p class="cband">E Band</p>
-            <p class="dband">F Band</p>
+            <p class="eBand">E Band</p>
+            <p class="fBand">F Band</p>
             <p class="lunch">Lunch</p>
-            <p class="eband">G Band</p>
+            <p class="gBand">G Band</p>
             </div>
     </div>
-  
 
-    
-    
-    
-    
+</div>
+<script src="https://www.gstatic.com/firebasejs/3.6.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBwHTe3UPin1FJ_JqnpPWpPlNFi0oDHL-w",
+    authDomain: "admob-app-id-3207985460.firebaseapp.com",
+    databaseURL: "https://admob-app-id-3207985460.firebaseio.com",
+    storageBucket: "admob-app-id-3207985460.appspot.com",
+    messagingSenderId: "498076811095"
+  };
+  firebase.initializeApp(config);
+</script>
+<!--Schedule Code-->
+
+  <script src="https://cdn.firebase.com/js/client/2.0.6/firebase.js"></script>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+        <script>
+ 
+        var submissionsRef = new Firebase('https://admob-app-id-3207985460.firebaseio.com/');
+
+        var $form = $('#myClasses');
+        $form.submit(function(event) {
+            event.preventDefault();
+
+
+
+   	//A Band
+  	var aBand = $('#aBand').val(); //Gets value
+  	if (aBand.length==0) //Defaults to A Band
+  	{
+  		aBand="A Band";
+  		//console.log("works");
+  	}
+  	$('.aClass').text(aBand);//Displays value to specific band
+  	//B Band
+  	var bBand = $('#bBand').val(); //Gets value
+  	if (bBand.length==0) //Defaults to B Band
+  	{
+  		bBand="B Band";
+  	}
+  	$('.bClass').text(bBand);//Displays value to specific band
+  	//C Band
+  	var cBand = $('#cBand').val(); //Gets value
+  	if (cBand.length==0) //Defaults to C Band
+  	{
+  		cBand="C Band";
+  	}
+  	$('.cClass').text(cBand);//Displays value to specific band
+  	//D Band
+  	var dBand = $('#dBand').val(); //Gets value
+  	if (dBand.length==0) //Defaults to D Band
+  	{
+  		dBand="D Band";
+  	}
+  	$('.dClass').text(dBand);//Displays value to specific band
+  	//E Band
+  	var eBand = $('#eBand').val(); //Gets value
+  	if (eBand.length==0) //Defaults to E Band
+  	{
+  		eBand="E Band";
+  		//console.log("works");
+  	}
+  	$('.eClass').text(eBand);//Displays value to specific band
+  	//F Band
+  	var fBand = $('#fBand').val(); //Gets value
+  	if (fBand.length==0) //Defaults to F Band
+  	{
+  		fBand="F Band";
+  	}
+  	$('.fClass').text(fBand);//Displays value to specific band
+  	//G Band
+  	var gBand = $('#gBand').val(); //Gets value
+  	if (gBand.length==0) //Defaults to G Band
+  	{
+  		gBand="G Band";
+  	}
+  	$('.gClass').text(gBand);//Displays value to specific band
+  	//Advisory
+  	var adv = $('#adv').val(); //Gets value
+  	if (adv.length==0) //Defaults to Advisory
+  	{
+  		adv="Advisory";
+  	}
+  	$('.advi').text(adv);//Displays value to specific band
+  	//Break
+  	var bre = $('#bre').val(); //Gets value
+  	if (bre.length==0) //Defaults to Break
+  	{
+  		bre="Break";
+  	}
+  	$('.break').text(bre);//Displays value to specific band
+  	//Lunch
+  	var lun = $('#lun').val(); //Gets value
+  	if (lun.length==0) //Defaults to Lunch
+  	{
+  		lun="Lunch";
+  	}
+  	$('.lunch').text(lun);//Displays value to specific band
+  	//Community 
+  	var comm = $('#comm').val(); //Gets value
+  	if (comm.length==0) //Defaults to Community
+  	{
+  		comm="Community";
+  	}
+  	$('.commu').text(comm);//Displays value to specific band
+
+
+ function home(){
+
+        location = 'index.html';
+
+    return false;
+}
+
+ 
+    // alert(aBand.val());
+
+            // Firebase generates random id when pushed
+            var data = $form.serializeArray();
+            submissionsRef.push(data, function(err) {
+                if (err) {
+                    window.alert('Error when submitting data: ' + err.message);
+                }
+            });
+
+            //window.alert('Submitted answers: \n' + JSON.stringify(data, null, 2));
+            $form[0].reset();
+        });
+        </script>
+<script type="text/javascript">
+
+	 $("#open-settings").on("show", function () {
+  $("body").addClass("modal-open");
+}).on("hidden", function () {
+  $("body").removeClass("modal-open")
+});
+</script>
+
+ <script type="text/javascript">
+   
+window.onload = function() {
+  bombMenu_init();
+ };
+
+/* menu animation */
+function bombMenu_init() {
+  var toggleMenuBtns = document.getElementsByClassName("menu-toggle-btn");
+  for(var i = 0; i < toggleMenuBtns.length; i++)  {
+    toggleMenuBtns[i].onclick = expand;   /* attach an event handler to every menu-toggle-btn in the page */
+  }
+  
+  function expand(e) {
+    e.target.classList.toggle("active");  /* show/hide menu through class 'active' */
+  }
+}
+
+ </script>
+
+ <script type="text/javascript"></script>
   </body>
 </html>
